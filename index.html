@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karishma Kale | Portfolio</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <!-- Google Fonts: Playfair Display (Editorial Serif) & Inter (UI Sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- STICKY NAVIGATION -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-bold">KK</span> <span class="logo-divider">/</span> <span class="logo-name">Karishma Kale</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+                <span class="hamburger-line line-1"></span>
+                <span class="hamburger-line line-2"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link" data-route="/about">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-route="/skills">Skills</a></li>
+                    <li><a href="#experience" class="nav-link" data-route="/experience">Experience</a></li>
+                    <li><a href="#projects" class="nav-link" data-route="/projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-link" data-route="/contact">Contact</a></li>
+                    <li>
+                        <a href="#resume" class="nav-link nav-resume-btn" data-route="/resume" aria-label="Resume Page">
+                            <span>Resume</span>
+                            <svg class="nav-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 01. HOME / HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                
+                <div class="hero-content-wrapper">
+                    <!-- LEFT COLUMN: Typography & Actions -->
+                    <div class="hero-text-col">
+                        <div class="hero-intro">
+                            <span class="greeting-prefix">Hey!! I'm</span>
+                            <span class="greeting-text">Karishma Kale</span>
+                        </div>
+                        
+                        <h1 class="hero-headline">
+                            <span class="line-wrap"><span class="line-content">Building thoughtful</span></span>
+                            <span class="line-wrap"><span class="line-content">software at the</span></span>
+                            <span class="line-wrap"><span class="line-content">intersection of <em>Full Stack</em></span></span>
+                            <span class="line-wrap"><span class="line-content"><em>Engineering &amp; AI.</em></span></span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            AI &amp; Data Science undergraduate passionate about Full Stack Engineering, software development, and building meaningful digital solutions. I enjoy turning ideas into practical products while exploring AI and contributing to open-source communities.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="resume.pdf" download class="btn-cta" id="resume-download-btn">
+                                <span>Download Resume</span>
+                                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 3V13M8 13L3 8M8 13L13 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            
+                            <div class="socials-container">
+                                <span class="socials-label">Let's Connect:</span>
+                                <div class="social-links">
+                                    <!-- GitHub -->
+                                    <a href="https://github.com/karizcloud" target="_blank" rel="noopener noreferrer" class="social-link-item" aria-label="GitHub">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                        </svg>
+                                        <span class="social-text">GitHub</span>
+                                    </a>
+                                    <!-- LinkedIn -->
+                                    <a href="https://www.linkedin.com/in/karishma-kale-345177383" target="_blank" rel="noopener noreferrer" class="social-link-item" aria-label="LinkedIn">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                            <rect x="2" y="9" width="4" height="12"></rect>
+                                            <circle cx="4" cy="4" r="2"></circle>
+                                        </svg>
+                                        <span class="social-text">LinkedIn</span>
+                                    </a>
+                                    <!-- Email -->
+                                    <a href="mailto:1006karishmakale@gmail.com?subject=Portfolio%20Inquiry" data-gmail-compose="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=1006karishmakale%40gmail.com&amp;su=Portfolio%20Inquiry" class="social-link-item" aria-label="Send an email to Karishma Kale" title="Email Karishma Kale">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                        <span class="social-text">Email</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT COLUMN: Portrait and Pastel Decorative Shapes -->
+                    <div class="hero-image-col">
+                        <div class="portrait-wrapper">
+                            <!-- Abstract decorative background shapes (restrained & editorial) -->
+                            <div class="shape shape-backdrop" aria-hidden="true"></div>
+                            <div class="shape shape-circle" aria-hidden="true"></div>
+                            <div class="shape shape-accent-line" aria-hidden="true"></div>
+                            
+                            <!-- Main Portrait Frame with clipping/masking container -->
+                            <div class="portrait-frame">
+                                <img src="assets/images/portfolio.png" alt="Portrait of Karishma Kale" class="portrait-image">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- BOTTOM: Credibility Strip -->
+                <div class="credibility-strip">
+                    <div class="credibility-item">
+                        <span class="cred-icon" aria-hidden="true">&#9817;</span>
+                        <span class="cred-role">Training & Placement Cell Coordinator</span>
+                        <span class="cred-institution">SIES GST</span>
+                    </div>
+                    <div class="credibility-divider" aria-hidden="true"></div>
+                    <div class="credibility-item">
+                        <span class="cred-icon" aria-hidden="true">&lt;/&gt;</span>
+                        <span class="cred-role">Open Source Contributor</span>
+                        <span class="cred-institution">GSSOC '26</span>
+                    </div>
+                    <div class="credibility-divider" aria-hidden="true"></div>
+                    <div class="credibility-item">
+                        <span class="cred-icon" aria-hidden="true">&#9827;</span>
+                        <span class="cred-role">Open Source Contributor</span>
+                        <span class="cred-institution">SSOC · Season 5</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 02. ABOUT ME SECTION -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="about-content-wrapper">
+                    
+                    <!-- LEFT COLUMN: Narrative & Details -->
+                    <div class="about-text-col">
+                        <div class="about-label-wrap">
+                            <span class="about-label">About Me</span>
+                            <span class="about-label-line" aria-hidden="true"></span>
+                        </div>
+                        
+                        <h2 class="about-headline">I build. I explore. I contribute.</h2>
+                        
+                        <div class="about-paragraphs">
+                            <p class="about-p">
+                                I'm an AI & Data Science undergraduate at SIES Graduate School of Technology with a strong interest in Full Stack Engineering, Software Development, and building technology that solves meaningful problems.
+                            </p>
+                            <p class="about-p">
+                                I enjoy working across the stack — turning ideas into functional products, designing intuitive interfaces, building backend systems, and exploring how AI can make software more useful and intelligent.
+                            </p>
+                            <p class="about-p">
+                                Alongside development, I actively contribute to open-source communities and participate in hackathons and collaborative technical initiatives. I'm constantly learning, experimenting, and looking for opportunities to turn what I learn into something real.
+                            </p>
+                        </div>
+                        
+                        <div class="about-cta-wrap">
+                            <a href="#experience" class="btn-about-cta">
+                                <span>More About Me</span>
+                                <svg class="about-cta-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT COLUMN: Elegant Editorial Visual -->
+                    <div class="about-visual-col">
+                        <div class="about-visual-wrapper">
+                            <!-- Subtle backdrop shapes -->
+                            <div class="about-shape-backdrop" aria-hidden="true"></div>
+                            <div class="about-shape-circle" aria-hidden="true"></div>
+                            
+                            <!-- Custom SVG Architectural & Engineering Canvas -->
+                            <div class="about-visual-card">
+                                <svg class="engineering-canvas-svg" viewBox="0 0 440 380" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Software architecture and system design illustration">
+                                    <!-- Background subtle grid -->
+                                    <defs>
+                                        <pattern id="aboutGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+                                            <circle cx="12" cy="12" r="1" fill="#FFB98F" fill-opacity="0.3" />
+                                        </pattern>
+                                        <linearGradient id="peachGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#FFB98F" stop-opacity="0.35"/>
+                                            <stop offset="100%" stop-color="#FFDDB5" stop-opacity="0.15"/>
+                                        </linearGradient>
+                                        <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#CBE8F7" stop-opacity="0.6"/>
+                                            <stop offset="100%" stop-color="#FFFBEA" stop-opacity="0.2"/>
+                                        </linearGradient>
+                                    </defs>
+
+                                    <!-- Canvas Window Frame -->
+                                    <rect x="20" y="20" width="400" height="340" rx="14" fill="#FFFBEA" stroke="#222222" stroke-opacity="0.08" stroke-width="1.5"/>
+                                    <rect x="20" y="20" width="400" height="340" rx="14" fill="url(#aboutGrid)"/>
+                                    
+                                    <!-- Window Header Bar -->
+                                    <rect x="20" y="20" width="400" height="42" rx="14" fill="#FFFFFF" fill-opacity="0.85"/>
+                                    <rect x="20" y="48" width="400" height="14" fill="#FFFFFF" fill-opacity="0.85"/>
+                                    <line x1="20" y1="62" x2="420" y2="62" stroke="#222222" stroke-opacity="0.08" stroke-width="1"/>
+                                    
+                                    <!-- Window controls (Pastel dots) -->
+                                    <circle cx="44" cy="41" r="5" fill="#FFB98F"/>
+                                    <circle cx="62" cy="41" r="5" fill="#FFDDB5"/>
+                                    <circle cx="80" cy="41" r="5" fill="#CBE8F7"/>
+                                    <text x="108" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#222222" fill-opacity="0.45" letter-spacing="0.5">architecture.spec // fullstack &amp; ai</text>
+
+                                    <!-- Modular Layer 1: Client & Interface Layer (Top Left) -->
+                                    <g class="ambient-layer-1">
+                                        <rect x="42" y="84" width="160" height="104" rx="8" fill="#FFFFFF" stroke="#222222" stroke-opacity="0.08" stroke-width="1"/>
+                                        <rect x="54" y="96" width="56" height="8" rx="4" fill="#FFB98F" fill-opacity="0.7"/>
+                                        <rect x="54" y="112" width="136" height="4" rx="2" fill="#222222" fill-opacity="0.1"/>
+                                        <rect x="54" y="122" width="100" height="4" rx="2" fill="#222222" fill-opacity="0.1"/>
+                                        <!-- Interface Component Blocks -->
+                                        <rect x="54" y="138" width="40" height="34" rx="6" fill="url(#blueGrad)" stroke="#CBE8F7" stroke-width="1"/>
+                                        <rect x="102" y="138" width="40" height="34" rx="6" fill="url(#peachGrad)" stroke="#FFDDB5" stroke-width="1"/>
+                                        <rect x="150" y="138" width="40" height="34" rx="6" fill="#FFFBEA" stroke="#222222" stroke-opacity="0.08" stroke-width="1"/>
+                                    </g>
+
+                                    <!-- Modular Layer 2: Core Logic & Services (Top Right) -->
+                                    <g class="ambient-layer-2">
+                                        <rect x="238" y="84" width="160" height="104" rx="8" fill="#FFFFFF" stroke="#222222" stroke-opacity="0.08" stroke-width="1"/>
+                                        <rect x="250" y="96" width="64" height="8" rx="4" fill="#CBE8F7"/>
+                                        <circle cx="378" cy="100" r="4" fill="#FFB98F"/>
+                                        
+                                        <!-- Logic Block diagram -->
+                                        <rect x="250" y="118" width="68" height="24" rx="4" fill="#FFFBEA" stroke="#FFB98F" stroke-width="1" stroke-dasharray="2 2"/>
+                                        <text x="260" y="134" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="600" fill="#222222" fill-opacity="0.75">API Engine</text>
+                                        
+                                        <rect x="326" y="146" width="62" height="24" rx="4" fill="url(#blueGrad)" stroke="#CBE8F7" stroke-width="1"/>
+                                        <text x="336" y="162" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="600" fill="#222222" fill-opacity="0.75">Pipeline</text>
+
+                                        <!-- Connector path -->
+                                        <path d="M 318 130 L 344 130 L 344 146" stroke="#222222" stroke-opacity="0.25" stroke-width="1.5" stroke-linecap="round"/>
+                                    </g>
+
+                                    <!-- Connecting Stream between Layers -->
+                                    <path d="M 202 136 C 220 136, 220 136, 238 136" stroke="#FFB98F" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 3"/>
+                                    <circle cx="220" cy="136" r="3.5" fill="#FFB98F"/>
+
+                                    <!-- Modular Layer 3: System Foundation & Intelligence Graph (Bottom) -->
+                                    <g class="ambient-layer-3">
+                                        <rect x="42" y="210" width="356" height="120" rx="8" fill="#FFFFFF" stroke="#222222" stroke-opacity="0.08" stroke-width="1"/>
+                                        <rect x="54" y="222" width="70" height="8" rx="4" fill="#FFDDB5"/>
+                                        <text x="54" y="246" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#222222" fill-opacity="0.5" letter-spacing="0.5">INTELLIGENCE &amp; DATA FOUNDATION</text>
+                                        
+                                        <!-- System Graph Nodes -->
+                                        <circle cx="90" cy="285" r="16" fill="url(#peachGrad)" stroke="#FFB98F" stroke-width="1.5"/>
+                                        <circle cx="90" cy="285" r="4" fill="#FFB98F"/>
+                                        
+                                        <circle cx="190" cy="270" r="18" fill="url(#blueGrad)" stroke="#CBE8F7" stroke-width="1.5"/>
+                                        <circle cx="190" cy="270" r="5" fill="#222222" fill-opacity="0.5"/>
+                                        
+                                        <circle cx="290" cy="290" r="16" fill="#FFFBEA" stroke="#FFB98F" stroke-width="1.5"/>
+                                        <circle cx="290" cy="290" r="4" fill="#FFB98F"/>
+
+                                        <circle cx="360" cy="265" r="14" fill="url(#peachGrad)" stroke="#FFDDB5" stroke-width="1.5"/>
+                                        <circle cx="360" cy="265" r="3.5" fill="#222222" fill-opacity="0.4"/>
+
+                                        <!-- Connected Graph Edges -->
+                                        <path d="M 106 285 Q 148 277 172 270" stroke="#222222" stroke-opacity="0.2" stroke-width="1.5"/>
+                                        <path d="M 208 270 Q 248 280 274 290" stroke="#FFB98F" stroke-width="1.5"/>
+                                        <path d="M 306 290 Q 333 277 346 265" stroke="#CBE8F7" stroke-width="1.5"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 03. MY TECH STACK SECTION -->
+        <section id="skills" class="skills-section">
+            <div class="skills-container">
+                
+                <!-- Section Header -->
+                <div class="skills-header">
+                    <div class="skills-label-wrap">
+                        <span class="skills-label">My Tech Stack</span>
+                        <span class="skills-label-line" aria-hidden="true"></span>
+                    </div>
+                    <h2 class="skills-headline">Technologies I work with</h2>
+                    <p class="skills-subtext">A curated selection of languages, frameworks, and tools I use to build robust digital solutions.</p>
+                </div>
+
+                <!-- Categories Grid -->
+                <div class="skills-grid">
+                    
+                    <!-- 1. FRONTEND -->
+                    <div class="skill-category-card" data-category="frontend">
+                        <div class="category-header">
+                            <span class="category-dot dot-peach"></span>
+                            <h3 class="category-title">Frontend</h3>
+                            <span class="category-count">5 techs</span>
+                        </div>
+                        <div class="tech-items-wrap">
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <path d="M4 3L5.6 19.3L12 21L18.4 19.3L20 3H4Z" stroke="#E44D26" stroke-width="1.8" stroke-linejoin="round"/>
+                                        <path d="M12 5.5V18.8L16.6 17.5L17.8 5.5H12Z" fill="#E44D26" fill-opacity="0.15"/>
+                                        <path d="M7.5 8H16.5M7.5 11.5H15.5L15 15.5L12 16.5L9 15.5L8.7 13.5" stroke="#E44D26" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">HTML5</span>
+                            </div>
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <path d="M4 3L5.6 19.3L12 21L18.4 19.3L20 3H4Z" stroke="#264DE4" stroke-width="1.8" stroke-linejoin="round"/>
+                                        <path d="M12 5.5V18.8L16.6 17.5L17.8 5.5H12Z" fill="#264DE4" fill-opacity="0.15"/>
+                                        <path d="M16.5 8H7.5M7.5 11.5H16.5L15 15.5L12 16.5L9 15.5L8.7 13.5" stroke="#264DE4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">CSS3</span>
+                            </div>
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <rect x="3" y="3" width="18" height="18" rx="4" fill="#F7DF1E" fill-opacity="0.2" stroke="#D4AC0D" stroke-width="1.8"/>
+                                        <path d="M10 12V16.5C10 17.3 9.3 18 8.5 18C7.7 18 7 17.3 7 16.5M14 17.5C14.5 18 15.5 18.2 16.5 17.8C17.5 17.4 17.5 16.2 16.5 15.5C15 14.5 14 14 14 13C14 12 15 11.5 16.5 11.5C17.3 11.5 18 12 18 12" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">JavaScript</span>
+                            </div>
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="#00B4D8" stroke-width="1.5" transform="rotate(30 12 12)"/>
+                                        <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="#00B4D8" stroke-width="1.5" transform="rotate(90 12 12)"/>
+                                        <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="#00B4D8" stroke-width="1.5" transform="rotate(150 12 12)"/>
+                                        <circle cx="12" cy="12" r="1.8" fill="#00B4D8"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">React.js</span>
+                            </div>
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <path d="M13.5 2.5L3.5 12.5L6.5 15.5L19.5 2.5H13.5Z" fill="#02569B" fill-opacity="0.4" stroke="#02569B" stroke-width="1.5" stroke-linejoin="round"/>
+                                        <path d="M13.5 12.5L8.5 17.5L11.5 20.5L16.5 15.5L13.5 12.5Z" fill="#0175C2" fill-opacity="0.8"/>
+                                        <path d="M11.5 20.5L14.5 23.5H20.5L14.5 17.5L11.5 20.5Z" fill="#29B6F6"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">Flutter</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. BACKEND -->
+                    <div class="skill-category-card" data-category="backend">
+                        <div class="category-header">
+                            <span class="category-dot dot-blue"></span>
+                            <h3 class="category-title">Backend</h3>
+                            <span class="category-count">3 techs</span>
+                        </div>
+                        <div class="tech-items-wrap">
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <path d="M12 2L21 7.2V17.6L12 22.8L3 17.6V7.2L12 2Z" stroke="#2E7D32" stroke-width="1.8" stroke-linejoin="round"/>
+                                        <path d="M12 7V17M8 9.5L16 14.5M16 9.5L8 14.5" stroke="#2E7D32" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">Node.js</span>
+                            </div>
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <rect x="3" y="4" width="18" height="16" rx="4" stroke="#222222" stroke-width="1.8"/>
+                                        <path d="M7 8H12M7 12H11M7 16H12M15 8L18 16M18 8L15 16" stroke="#222222" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">Express.js</span>
+                            </div>
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="9" stroke="#059669" stroke-width="1.8"/>
+                                        <path d="M13 5L7 13H12L11 19L17 11H12L13 5Z" fill="#059669" fill-opacity="0.3" stroke="#059669" stroke-width="1.6" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. DATABASE -->
+                    <div class="skill-category-card" data-category="database">
+                        <div class="category-header">
+                            <span class="category-dot dot-light-peach"></span>
+                            <h3 class="category-title">Database</h3>
+                            <span class="category-count">3 techs</span>
+                        </div>
+                        <div class="tech-items-wrap">
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <path d="M4.5 17.5L7.2 4.5L10.5 10.5L4.5 17.5Z" fill="#FFA611" fill-opacity="0.8"/>
+                                        <path d="M19.5 17.5L16.2 8.5L12 16.5L19.5 17.5Z" fill="#F57C00" fill-opacity="0.8"/>
+                                        <path d="M4.5 17.5L12 21.5L19.5 17.5L10.5 10.5L4.5 17.5Z" fill="#FFCA28" stroke="#FFA611" stroke-width="1.2" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">Firebase</span>
+                            </div>
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <ellipse cx="12" cy="6" rx="8" ry="3" stroke="#0284C7" stroke-width="1.8"/>
+                                        <path d="M4 6V12C4 13.66 7.58 15 12 15C16.42 15 20 13.66 20 12V6M4 12V18C4 19.66 7.58 21 12 21C16.42 21 20 19.66 20 18V12" stroke="#0284C7" stroke-width="1.8"/>
+                                        <path d="M8 12H16" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">SQL</span>
+                            </div>
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <path d="M4 6C4 4 7 3 12 3C17 3 20 4 20 6V18C20 20 17 21 12 21C7 21 4 20 4 18V6Z" stroke="#0369A1" stroke-width="1.8"/>
+                                        <path d="M4 10C7.5 12 16.5 12 20 10M4 15C7.5 17 16.5 17 20 15" stroke="#0369A1" stroke-width="1.6"/>
+                                        <path d="M12 7V17" stroke="#0369A1" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="2 2"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. AI / DATA -->
+                    <div class="skill-category-card" data-category="aidata">
+                        <div class="category-header">
+                            <span class="category-dot dot-peach"></span>
+                            <h3 class="category-title">AI / Data</h3>
+                            <span class="category-count">3 techs</span>
+                        </div>
+                        <div class="tech-items-wrap">
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <path d="M11.5 2C7.5 2 7 3.5 7 5.5V7.5H12V9H5C3 9 2 10.5 2 13C2 15.5 3.5 16.5 6 16.5H7.5V14.5C7.5 12.5 9 11 11 11H15.5C16.5 11 17 10 17 9V5.5C17 3.5 15.5 2 11.5 2ZM9 4.5C9.5 4.5 10 5 10 5.5C10 6 9.5 6.5 9 6.5C8.5 6.5 8 6 8 5.5C8 5 8.5 4.5 9 4.5Z" fill="#3776AB"/>
+                                        <path d="M12.5 22C16.5 22 17 20.5 17 18.5V16.5H12V15H19C21 15 22 13.5 22 11C22 8.5 20.5 7.5 18 7.5H16.5V9.5C16.5 11.5 15 13 13 13H8.5C7.5 13 7 14 7 15V18.5C7 20.5 8.5 22 12.5 22ZM15 19.5C14.5 19.5 14 19 14 18.5C14 18 14.5 17.5 15 17.5C15.5 17.5 16 18 16 18.5C16 19 15.5 19.5 15 19.5Z" fill="#EAB308"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">Python</span>
+                            </div>
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <circle cx="6" cy="6" r="3" stroke="#FFB98F" stroke-width="1.8" fill="#FFFBEA"/>
+                                        <circle cx="18" cy="6" r="3" stroke="#FFB98F" stroke-width="1.8" fill="#FFFBEA"/>
+                                        <circle cx="12" cy="18" r="3" stroke="#222222" stroke-width="1.8" fill="#CBE8F7"/>
+                                        <circle cx="12" cy="10" r="2.5" stroke="#FFB98F" stroke-width="1.8" fill="#FFDDB5"/>
+                                        <path d="M8.5 7.5L10 9M15.5 7.5L14 9M12 12.5V15M7.5 8.5L10.5 16M16.5 8.5L13.5 16" stroke="#222222" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">Machine Learning</span>
+                            </div>
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <path d="M12 2L14.5 8.5L21 11L14.5 13.5L12 20L9.5 13.5L3 11L9.5 8.5L12 2Z" fill="#CBE8F7" stroke="#222222" stroke-width="1.6" stroke-linejoin="round"/>
+                                        <path d="M19 17L20 19.5L22.5 20.5L20 21.5L19 24L18 21.5L15.5 20.5L18 19.5L19 17Z" fill="#FFB98F"/>
+                                        <path d="M6 3L6.8 5L9 5.8L6.8 6.5L6 8.5L5.2 6.5L3 5.8L5.2 5L6 3Z" fill="#FFDDB5"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">AI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. TOOLS -->
+                    <div class="skill-category-card" data-category="tools">
+                        <div class="category-header">
+                            <span class="category-dot dot-blue"></span>
+                            <h3 class="category-title">Tools</h3>
+                            <span class="category-count">4 techs</span>
+                        </div>
+                        <div class="tech-items-wrap">
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <rect x="3" y="3" width="18" height="18" rx="4" transform="rotate(45 12 12)" stroke="#F05032" stroke-width="1.8"/>
+                                        <circle cx="9" cy="12" r="2" fill="#F05032"/>
+                                        <circle cx="15" cy="9" r="2" fill="#F05032"/>
+                                        <circle cx="15" cy="15" r="2" fill="#F05032"/>
+                                        <path d="M9 12H12C13.65 12 15 10.65 15 9M12 12V15" stroke="#F05032" stroke-width="1.8" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">Git</span>
+                            </div>
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#222222" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">GitHub</span>
+                            </div>
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <path d="M17.5 2.5L7 10.5L3.5 8L2 9.5L5.5 12.5L2 15.5L3.5 17L7 14.5L17.5 22.5L22 20.5V4.5L17.5 2.5Z" stroke="#007ACC" stroke-width="1.8" stroke-linejoin="round"/>
+                                        <path d="M17.5 6.5V18.5L9.5 12.5L17.5 6.5Z" fill="#007ACC" fill-opacity="0.25" stroke="#007ACC" stroke-width="1.5"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">VS Code</span>
+                            </div>
+                            <div class="tech-item" tabindex="0">
+                                <div class="tech-icon-box">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+                                        <path d="M8.5 2H12V8H8.5C6.8 8 5.5 6.7 5.5 5C5.5 3.3 6.8 2 8.5 2Z" fill="#F24E1E" fill-opacity="0.9"/>
+                                        <path d="M12 2H15.5C17.2 2 18.5 3.3 18.5 5C18.5 6.7 17.2 8 15.5 8H12V2Z" fill="#FF7262" fill-opacity="0.9"/>
+                                        <path d="M8.5 8H12V14H8.5C6.8 14 5.5 12.7 5.5 11C5.5 9.3 6.8 8 8.5 8Z" fill="#A259FF" fill-opacity="0.9"/>
+                                        <circle cx="15.5" cy="11" r="3" fill="#1ABCFE" fill-opacity="0.9"/>
+                                        <path d="M8.5 14H12V17.5C12 19.2 10.7 20.5 9 20.5C7.3 20.5 6 19.2 6 17.5C6 15.8 7.3 14 9 14H8.5Z" fill="#0ACF83" fill-opacity="0.9"/>
+                                    </svg>
+                                </div>
+                                <span class="tech-name">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 04. EXPERIENCE & EDUCATION / MY JOURNEY SECTION -->
+        <section id="experience" class="journey-section">
+            <div class="journey-container">
+                
+                <!-- Section Header -->
+                <div class="journey-header">
+                    <div class="journey-label-wrap">
+                        <span class="journey-label">My Journey</span>
+                        <span class="journey-label-line" aria-hidden="true"></span>
+                    </div>
+                    <h2 class="journey-headline">Learning, building &amp; growing along the way.</h2>
+                    <p class="journey-subtext">A story of progression across education, student leadership, and open-source contributions.</p>
+                </div>
+
+                <!-- Timeline Container -->
+                <div class="journey-timeline-wrapper">
+                    
+                    <!-- Continuous Timeline Vertical Spine -->
+                    <div class="timeline-spine-track" aria-hidden="true">
+                        <div class="timeline-spine-fill"></div>
+                    </div>
+
+                    <div class="timeline-items-list">
+                        
+                        <!-- Milestone 1: Education -->
+                        <div class="timeline-item" data-milestone="1">
+                            <div class="timeline-year-col">
+                                <span class="timeline-year">2024 — 2028</span>
+                            </div>
+                            <div class="timeline-node-col" aria-hidden="true">
+                                <div class="timeline-node-dot dot-peach">
+                                    <div class="node-inner-pulse"></div>
+                                </div>
+                            </div>
+                            <div class="timeline-content-col">
+                                <div class="timeline-content-card">
+                                    <div class="timeline-tag tag-education">Education</div>
+                                    <h3 class="timeline-title">B.Tech — Artificial Intelligence &amp; Data Science</h3>
+                                    <h4 class="timeline-institution">SIES Graduate School of Technology</h4>
+                                    <p class="timeline-desc">AI &amp; Data Science undergraduate</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Milestone 2: Leadership -->
+                        <div class="timeline-item" data-milestone="2">
+                            <div class="timeline-year-col">
+                                <span class="timeline-year">2026 — PRESENT</span>
+                            </div>
+                            <div class="timeline-node-col" aria-hidden="true">
+                                <div class="timeline-node-dot dot-blue">
+                                    <div class="node-inner-pulse"></div>
+                                </div>
+                            </div>
+                            <div class="timeline-content-col">
+                                <div class="timeline-content-card">
+                                    <div class="timeline-tag tag-leadership">Leadership</div>
+                                    <h3 class="timeline-title">Training &amp; Placement Cell Coordinator</h3>
+                                    <h4 class="timeline-institution">SIES Graduate School of Technology</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Milestone 3: Open Source (GSSOC) -->
+                        <div class="timeline-item" data-milestone="3">
+                            <div class="timeline-year-col">
+                                <span class="timeline-year">2026</span>
+                            </div>
+                            <div class="timeline-node-col" aria-hidden="true">
+                                <div class="timeline-node-dot dot-peach">
+                                    <div class="node-inner-pulse"></div>
+                                </div>
+                            </div>
+                            <div class="timeline-content-col">
+                                <div class="timeline-content-card">
+                                    <div class="timeline-tag tag-opensource">Open Source</div>
+                                    <h3 class="timeline-title">Open Source Contributor</h3>
+                                    <h4 class="timeline-institution">GirlScript Summer of Code — GSSOC '26</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Milestone 4: Open Source (SSOC) -->
+                        <div class="timeline-item" data-milestone="4">
+                            <div class="timeline-year-col">
+                                <span class="timeline-year">2026</span>
+                            </div>
+                            <div class="timeline-node-col" aria-hidden="true">
+                                <div class="timeline-node-dot dot-blue">
+                                    <div class="node-inner-pulse"></div>
+                                </div>
+                            </div>
+                            <div class="timeline-content-col">
+                                <div class="timeline-content-card">
+                                    <div class="timeline-tag tag-opensource">Open Source</div>
+                                    <h3 class="timeline-title">Open Source Contributor</h3>
+                                    <h4 class="timeline-institution">SSOC — Season 5</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 05. FEATURED WORK SECTION -->
+        <section id="projects" class="projects-section">
+            <div class="projects-container">
+                
+                <!-- Section Header -->
+                <div class="projects-header">
+                    <div class="projects-label-wrap">
+                        <span class="projects-label">Featured Work</span>
+                        <span class="projects-label-line" aria-hidden="true"></span>
+                    </div>
+                    <h2 class="projects-headline">Things I've built.</h2>
+                    <p class="projects-subtext">A selection of projects where I explored ideas across full-stack engineering, AI, mobile development, and real-world problem solving.</p>
+                </div>
+
+                <!-- Projects Showcase List -->
+                <div class="projects-list">
+                    
+                    <!-- ==============================================
+                         PROJECT 01: rustMetric (Visual Left, Content Right)
+                         ============================================== -->
+                    <article class="project-showcase project-featured layout-visual-left" data-project="1">
+                        <!-- Left: Visual Area -->
+                        <div class="project-visual-col">
+                            <div class="project-visual-frame theme-peach">
+                                <div class="visual-backdrop-shape" aria-hidden="true"></div>
+                                <div class="project-canvas-card">
+                                    <svg class="project-svg-canvas" viewBox="0 0 520 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="rustMetric Credit Intelligence and Trust Scoring Visualization">
+                                        <defs>
+                                            <pattern id="projGrid1" width="20" height="20" patternUnits="userSpaceOnUse">
+                                                <circle cx="10" cy="10" r="1" fill="#FFB98F" fill-opacity="0.3" />
+                                            </pattern>
+                                            <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" stop-color="#FFDDB5"/>
+                                                <stop offset="60%" stop-color="#FFB98F"/>
+                                                <stop offset="100%" stop-color="#E27238"/>
+                                            </linearGradient>
+                                            <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+                                                <stop offset="100%" stop-color="#FFFBEA" stop-opacity="0.8"/>
+                                            </linearGradient>
+                                        </defs>
+
+                                        <!-- Canvas Container -->
+                                        <rect x="15" y="15" width="490" height="310" rx="12" fill="url(#bgGrad1)" stroke="#222222" stroke-opacity="0.08" stroke-width="1.5"/>
+                                        <rect x="15" y="15" width="490" height="310" rx="12" fill="url(#projGrid1)"/>
+
+                                        <!-- Header Bar -->
+                                        <rect x="15" y="15" width="490" height="38" rx="12" fill="#FFFFFF" fill-opacity="0.9"/>
+                                        <rect x="15" y="40" width="490" height="13" fill="#FFFFFF" fill-opacity="0.9"/>
+                                        <line x1="15" y1="53" x2="505" y2="53" stroke="#222222" stroke-opacity="0.08" stroke-width="1"/>
+                                        <circle cx="36" cy="34" r="4.5" fill="#FFB98F"/>
+                                        <circle cx="50" cy="34" r="4.5" fill="#FFDDB5"/>
+                                        <circle cx="64" cy="34" r="4.5" fill="#CBE8F7"/>
+                                        <text x="88" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="600" fill="#222222" fill-opacity="0.5" letter-spacing="0.5">trustmetric.ai // alternative-credit-model</text>
+
+                                        <!-- Scoring Gauge Arc -->
+                                        <g class="visual-gauge-group">
+                                            <path d="M 90 190 A 85 85 0 0 1 250 190" stroke="#222222" stroke-opacity="0.08" stroke-width="14" stroke-linecap="round"/>
+                                            <path d="M 90 190 A 85 85 0 0 1 225 120" stroke="url(#scoreGrad)" stroke-width="14" stroke-linecap="round"/>
+                                            <text x="170" y="165" font-family="'Instrument Serif', serif" font-size="34" font-weight="400" fill="#222222" text-anchor="middle">785</text>
+                                            <text x="170" y="185" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#222222" fill-opacity="0.5" text-anchor="middle" letter-spacing="1">TRUST SCORE · 300–900</text>
+                                            <text x="85" y="210" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="600" fill="#222222" fill-opacity="0.4">300</text>
+                                            <text x="245" y="210" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="600" fill="#222222" fill-opacity="0.4">900</text>
+                                        </g>
+
+                                        <!-- Risk Tier Card (Top Right) -->
+                                        <rect x="290" y="75" width="195" height="65" rx="8" fill="#FFFFFF" stroke="#FFB98F" stroke-width="1.2"/>
+                                        <rect x="302" y="87" width="55" height="7" rx="3.5" fill="#FFB98F" fill-opacity="0.6"/>
+                                        <text x="302" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#222222">Tier 1 · Prime Profile</text>
+                                        <text x="302" y="127" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#222222" fill-opacity="0.6">Multi-dimensional risk verification</text>
+
+                                        <!-- Multi-Dimensional Metrics (Bottom Right) -->
+                                        <rect x="290" y="152" width="195" height="152" rx="8" fill="#FFFFFF" stroke="#222222" stroke-opacity="0.08" stroke-width="1"/>
+                                        <text x="304" y="174" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="700" fill="#222222" fill-opacity="0.6" letter-spacing="0.5">ALTERNATIVE DATA FACTORS</text>
+                                        
+                                        <!-- Factor 1 -->
+                                        <text x="304" y="196" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#222222" fill-opacity="0.8">Cashflow Consistency</text>
+                                        <rect x="304" y="202" width="165" height="5" rx="2.5" fill="#222222" fill-opacity="0.06"/>
+                                        <rect x="304" y="202" width="145" height="5" rx="2.5" fill="#FFB98F"/>
+
+                                        <!-- Factor 2 -->
+                                        <text x="304" y="226" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#222222" fill-opacity="0.8">Utility Payment Reliability</text>
+                                        <rect x="304" y="232" width="165" height="5" rx="2.5" fill="#222222" fill-opacity="0.06"/>
+                                        <rect x="304" y="232" width="130" height="5" rx="2.5" fill="#FFDDB5"/>
+
+                                        <!-- Factor 3 -->
+                                        <text x="304" y="256" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#222222" fill-opacity="0.8">Behavioral Stability</text>
+                                        <rect x="304" y="262" width="165" height="5" rx="2.5" fill="#222222" fill-opacity="0.06"/>
+                                        <rect x="304" y="262" width="152" height="5" rx="2.5" fill="#CBE8F7"/>
+
+                                        <!-- Factor 4 -->
+                                        <text x="304" y="286" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#222222" fill-opacity="0.8">Digital Footprint Integrity</text>
+                                        <rect x="304" y="292" width="165" height="5" rx="2.5" fill="#222222" fill-opacity="0.06"/>
+                                        <rect x="304" y="292" width="138" height="5" rx="2.5" fill="#FFB98F"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right: Content Area -->
+                        <div class="project-content-col">
+                            <div class="project-meta-wrap">
+                                <span class="project-num">01</span>
+                                <span class="project-badge badge-featured">Featured</span>
+                            </div>
+                            <h3 class="project-title">TrustMetric</h3>
+                            <p class="project-description">
+                                AI-powered credit intelligence platform that converts alternative financial data into a 300–900 trust score for users without a conventional credit history. Built a multi-dimensional scoring model with risk tier classification for lending decisions where bureau data doesn't exist.
+                            </p>
+                            <div class="project-actions">
+                                <a href="https://github.com/karizcloud/HackMax-TrustMetric.git" target="_blank" rel="noopener noreferrer" class="btn-project-repo" aria-label="View rustMetric repository on GitHub">
+                                    <span>Repository</span>
+                                    <svg class="project-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ==============================================
+                         PROJECT 02: Language Creeper (Content Left, Visual Right)
+                         ============================================== -->
+                    <article class="project-showcase layout-visual-right" data-project="2">
+                        <!-- Left: Content Area -->
+                        <div class="project-content-col">
+                            <div class="project-meta-wrap">
+                                <span class="project-num">02</span>
+                            </div>
+                            <h3 class="project-title">Language Creeper</h3>
+                            <p class="project-description">
+                                Flutter-based language learning app with adaptive lesson sequencing that adjusts pacing to individual performance instead of a fixed curriculum, plus real-time progress tracking.
+                            </p>
+                            <div class="project-actions">
+                                <a href="https://github.com/karizcloud/LanguageCreeper.git" target="_blank" rel="noopener noreferrer" class="btn-project-repo" aria-label="View Language Creeper repository on GitHub">
+                                    <span>Repository</span>
+                                    <svg class="project-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Right: Visual Area -->
+                        <div class="project-visual-col">
+                            <div class="project-visual-frame theme-blue">
+                                <div class="visual-backdrop-shape" aria-hidden="true"></div>
+                                <div class="project-canvas-card">
+                                    <svg class="project-svg-canvas" viewBox="0 0 520 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Language Creeper Adaptive Learning Sequencing Visualization">
+                                        <defs>
+                                            <pattern id="projGrid2" width="20" height="20" patternUnits="userSpaceOnUse">
+                                                <circle cx="10" cy="10" r="1" fill="#CBE8F7" fill-opacity="0.4" />
+                                            </pattern>
+                                            <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+                                                <stop offset="100%" stop-color="#F4FAFD" stop-opacity="0.85"/>
+                                            </linearGradient>
+                                        </defs>
+
+                                        <!-- Canvas Container -->
+                                        <rect x="15" y="15" width="490" height="310" rx="12" fill="url(#bgGrad2)" stroke="#222222" stroke-opacity="0.08" stroke-width="1.5"/>
+                                        <rect x="15" y="15" width="490" height="310" rx="12" fill="url(#projGrid2)"/>
+
+                                        <!-- Header Bar -->
+                                        <rect x="15" y="15" width="490" height="38" rx="12" fill="#FFFFFF" fill-opacity="0.9"/>
+                                        <rect x="15" y="40" width="490" height="13" fill="#FFFFFF" fill-opacity="0.9"/>
+                                        <line x1="15" y1="53" x2="505" y2="53" stroke="#222222" stroke-opacity="0.08" stroke-width="1"/>
+                                        <circle cx="36" cy="34" r="4.5" fill="#CBE8F7"/>
+                                        <circle cx="50" cy="34" r="4.5" fill="#FFDDB5"/>
+                                        <circle cx="64" cy="34" r="4.5" fill="#FFB98F"/>
+                                        <text x="88" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="600" fill="#222222" fill-opacity="0.5" letter-spacing="0.5">language-creeper // adaptive-sequencing-engine</text>
+
+                                        <!-- Adaptive Learning Path Graph -->
+                                        <path d="M 75 190 C 130 190, 140 115, 200 115 C 260 115, 270 235, 330 235 C 390 235, 400 160, 455 160" stroke="#CBE8F7" stroke-width="4" stroke-linecap="round"/>
+                                        <path d="M 75 190 C 130 190, 140 115, 200 115 C 260 115, 270 235, 330 235 C 390 235, 400 160, 455 160" stroke="#0284C7" stroke-width="2" stroke-dasharray="6 4"/>
+
+                                        <!-- Milestone Node 1: Foundations -->
+                                        <g class="path-node">
+                                            <circle cx="75" cy="190" r="22" fill="#FFFFFF" stroke="#0284C7" stroke-width="2"/>
+                                            <circle cx="75" cy="190" r="8" fill="#0284C7"/>
+                                            <text x="75" y="228" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#222222" text-anchor="middle">Foundations</text>
+                                            <text x="75" y="240" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600" fill="#0284C7" text-anchor="middle">100% Mastery</text>
+                                        </g>
+
+                                        <!-- Milestone Node 2: Adaptive Branch -->
+                                        <g class="path-node">
+                                            <circle cx="200" cy="115" r="24" fill="#FFFFFF" stroke="#FFB98F" stroke-width="2"/>
+                                            <circle cx="200" cy="115" r="9" fill="#FFB98F"/>
+                                            <text x="200" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#222222" text-anchor="middle">Adaptive Branch</text>
+                                            <text x="200" y="92" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600" fill="#E27238" text-anchor="middle">Pacing Accelerated</text>
+                                        </g>
+
+                                        <!-- Milestone Node 3: Recall Evaluation -->
+                                        <g class="path-node">
+                                            <circle cx="330" cy="235" r="22" fill="#FFFFFF" stroke="#CBE8F7" stroke-width="2"/>
+                                            <circle cx="330" cy="235" r="8" fill="#CBE8F7"/>
+                                            <text x="330" y="272" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#222222" text-anchor="middle">Recall Evaluation</text>
+                                            <text x="330" y="284" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600" fill="#0284C7" text-anchor="middle">Dynamic Interval</text>
+                                        </g>
+
+                                        <!-- Milestone Node 4: Fluency Goal -->
+                                        <g class="path-node">
+                                            <circle cx="455" cy="160" r="26" fill="#FFFFFF" stroke="#FFDDB5" stroke-width="2"/>
+                                            <circle cx="455" cy="160" r="10" fill="#FFDDB5"/>
+                                            <text x="455" y="122" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#222222" text-anchor="middle">Fluency Goal</text>
+                                            <text x="455" y="134" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600" fill="#C85A17" text-anchor="middle">Real-Time Track</text>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ==============================================
+                         PROJECT 03: ResourceBridge (Visual Left, Content Right)
+                         ============================================== -->
+                    <article class="project-showcase layout-visual-left" data-project="3">
+                        <!-- Left: Visual Area -->
+                        <div class="project-visual-col">
+                            <div class="project-visual-frame theme-peach-blue">
+                                <div class="visual-backdrop-shape" aria-hidden="true"></div>
+                                <div class="project-canvas-card">
+                                    <svg class="project-svg-canvas" viewBox="0 0 520 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ResourceBridge NGO and Resource Provider Network Visualization">
+                                        <defs>
+                                            <pattern id="projGrid3" width="20" height="20" patternUnits="userSpaceOnUse">
+                                                <circle cx="10" cy="10" r="1" fill="#FFDDB5" fill-opacity="0.4" />
+                                            </pattern>
+                                            <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+                                                <stop offset="100%" stop-color="#FFFDF5" stop-opacity="0.85"/>
+                                            </linearGradient>
+                                        </defs>
+
+                                        <!-- Canvas Container -->
+                                        <rect x="15" y="15" width="490" height="310" rx="12" fill="url(#bgGrad3)" stroke="#222222" stroke-opacity="0.08" stroke-width="1.5"/>
+                                        <rect x="15" y="15" width="490" height="310" rx="12" fill="url(#projGrid3)"/>
+
+                                        <!-- Header Bar -->
+                                        <rect x="15" y="15" width="490" height="38" rx="12" fill="#FFFFFF" fill-opacity="0.9"/>
+                                        <rect x="15" y="40" width="490" height="13" fill="#FFFFFF" fill-opacity="0.9"/>
+                                        <line x1="15" y1="53" x2="505" y2="53" stroke="#222222" stroke-opacity="0.08" stroke-width="1"/>
+                                        <circle cx="36" cy="34" r="4.5" fill="#FFDDB5"/>
+                                        <circle cx="50" cy="34" r="4.5" fill="#CBE8F7"/>
+                                        <circle cx="64" cy="34" r="4.5" fill="#FFB98F"/>
+                                        <text x="88" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="600" fill="#222222" fill-opacity="0.5" letter-spacing="0.5">resourcebridge.org // coordination-network</text>
+
+                                        <!-- Left Hub: NGO Organizations -->
+                                        <rect x="50" y="95" width="135" height="180" rx="10" fill="#FFFFFF" stroke="#FFB98F" stroke-width="1.5"/>
+                                        <rect x="62" y="108" width="55" height="7" rx="3.5" fill="#FFB98F"/>
+                                        <text x="62" y="132" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#222222">NGO Hub</text>
+                                        <text x="62" y="146" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="500" fill="#222222" fill-opacity="0.6">Community Demands</text>
+
+                                        <rect x="62" y="165" width="111" height="28" rx="5" fill="#FFFBEA" stroke="#222222" stroke-opacity="0.06"/>
+                                        <text x="72" y="182" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#222222">Education Needs</text>
+
+                                        <rect x="62" y="202" width="111" height="28" rx="5" fill="#FFFBEA" stroke="#222222" stroke-opacity="0.06"/>
+                                        <text x="72" y="219" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#222222">Medical Supplies</text>
+
+                                        <rect x="62" y="238" width="111" height="24" rx="5" fill="#FFFBEA" stroke="#222222" stroke-opacity="0.06"/>
+                                        <text x="72" y="254" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="600" fill="#222222">Food Logistics</text>
+
+                                        <!-- Center Coordination Bridge -->
+                                        <g class="bridge-center">
+                                            <path d="M 185 179 C 235 179, 235 130, 335 130" stroke="#FFB98F" stroke-width="2" stroke-linecap="round"/>
+                                            <path d="M 185 216 C 260 216, 260 216, 335 216" stroke="#CBE8F7" stroke-width="2.5" stroke-linecap="round"/>
+                                            <path d="M 185 250 C 235 250, 235 260, 335 260" stroke="#FFDDB5" stroke-width="2" stroke-linecap="round"/>
+                                            
+                                            <circle cx="260" cy="205" r="20" fill="#FFFFFF" stroke="#222222" stroke-opacity="0.1" stroke-width="1.5"/>
+                                            <circle cx="260" cy="205" r="7" fill="#FFB98F"/>
+                                            <text x="260" y="174" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="700" fill="#222222" text-anchor="middle" letter-spacing="0.5">COORDINATION</text>
+                                        </g>
+
+                                        <!-- Right Hub: Resource Providers -->
+                                        <rect x="335" y="95" width="135" height="180" rx="10" fill="#FFFFFF" stroke="#CBE8F7" stroke-width="1.5"/>
+                                        <rect x="347" y="108" width="60" height="7" rx="3.5" fill="#CBE8F7"/>
+                                        <text x="347" y="132" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#222222">Resource Hub</text>
+                                        <text x="347" y="146" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="500" fill="#222222" fill-opacity="0.6">Verified Providers</text>
+
+                                        <rect x="347" y="165" width="111" height="28" rx="5" fill="#F4FAFD" stroke="#CBE8F7" stroke-width="1"/>
+                                        <text x="357" y="182" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#222222">Supply Matching</text>
+
+                                        <rect x="347" y="202" width="111" height="28" rx="5" fill="#F4FAFD" stroke="#CBE8F7" stroke-width="1"/>
+                                        <text x="357" y="219" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#222222">Distribution Active</text>
+
+                                        <rect x="347" y="238" width="111" height="24" rx="5" fill="#F4FAFD" stroke="#CBE8F7" stroke-width="1"/>
+                                        <text x="357" y="254" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="600" fill="#222222">Direct Delivery</text>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right: Content Area -->
+                        <div class="project-content-col">
+                            <div class="project-meta-wrap">
+                                <span class="project-num">03</span>
+                            </div>
+                            <h3 class="project-title">ResourceBridge</h3>
+                            <p class="project-description">
+                                Web application connecting NGOs with resource providers, streamlining how organizations find and coordinate support for the communities they serve.
+                            </p>
+                            <div class="project-actions">
+                                <a href="https://github.com/karizcloud/ResourceBridge.git" target="_blank" rel="noopener noreferrer" class="btn-project-repo" aria-label="View ResourceBridge repository on GitHub">
+                                    <span>Repository</span>
+                                    <svg class="project-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 06. LET'S CONNECT / CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                
+                <div class="contact-card-wrapper">
+                    <!-- Decorative background shapes -->
+                    <div class="contact-bg-backdrop" aria-hidden="true"></div>
+                    <div class="contact-bg-circle" aria-hidden="true"></div>
+
+                    <div class="contact-inner-grid">
+                        
+                        <!-- LEFT COLUMN: Heading, Narrative, Primary CTA, Direct Links -->
+                        <div class="contact-text-col">
+                            
+                            <div class="contact-label-wrap">
+                                <span class="contact-label">Let's Connect</span>
+                                <span class="contact-label-line" aria-hidden="true"></span>
+                            </div>
+
+                            <h2 class="contact-headline">
+                                <span class="contact-line-wrap"><span class="contact-line-content">Let's build</span></span>
+                                <span class="contact-line-wrap"><span class="contact-line-content">something</span></span>
+                                <span class="contact-line-wrap"><span class="contact-line-content">meaningful.</span></span>
+                            </h2>
+
+                            <div class="contact-paragraphs">
+                                <p class="contact-p">
+                                    I'm always open to conversations around software development, full-stack engineering, AI, open source, internships, and interesting ideas worth building.
+                                </p>
+                                <p class="contact-p">
+                                    If you have an opportunity, project, collaboration, or simply want to connect, I'd love to hear from you.
+                                </p>
+                            </div>
+
+                            <!-- Primary CTA Button -->
+                            <div class="contact-cta-action">
+                                <a href="mailto:1006karishmakale@gmail.com?subject=Portfolio%20Inquiry" data-gmail-compose="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=1006karishmakale%40gmail.com&amp;su=Portfolio%20Inquiry" class="btn-contact-talk" aria-label="Send email to Karishma Kale">
+                                    <span>Let's Talk</span>
+                                    <svg class="contact-arrow-icon" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <!-- Contact Channels Row -->
+                            <div class="contact-channels-grid">
+                                
+                                <!-- Email Link -->
+                                <a href="mailto:1006karishmakale@gmail.com?subject=Portfolio%20Inquiry" data-gmail-compose="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=1006karishmakale%40gmail.com&amp;su=Portfolio%20Inquiry" class="contact-channel-item" aria-label="Email 1006karishmakale@gmail.com">
+                                    <div class="channel-icon-box">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="channel-info">
+                                        <span class="channel-type">Email</span>
+                                        <span class="channel-value">1006karishmakale@gmail.com</span>
+                                    </div>
+                                    <svg class="channel-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+
+                                <!-- GitHub Link -->
+                                <a href="https://github.com/karizcloud" target="_blank" rel="noopener noreferrer" class="contact-channel-item" aria-label="GitHub profile karizcloud">
+                                    <div class="channel-icon-box">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="channel-info">
+                                        <span class="channel-type">GitHub</span>
+                                        <span class="channel-value">karizcloud</span>
+                                    </div>
+                                    <svg class="channel-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+
+                                <!-- LinkedIn Link -->
+                                <a href="https://www.linkedin.com/in/karishma-kale-345177383" target="_blank" rel="noopener noreferrer" class="contact-channel-item" aria-label="LinkedIn profile Karishma Kale">
+                                    <div class="channel-icon-box">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                            <rect x="2" y="9" width="4" height="12"></rect>
+                                            <circle cx="4" cy="4" r="2"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="channel-info">
+                                        <span class="channel-type">LinkedIn</span>
+                                        <span class="channel-value">Karishma Kale</span>
+                                    </div>
+                                    <svg class="channel-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- RIGHT COLUMN: Subtle Geometric Abstract Pastel Composition -->
+                        <div class="contact-visual-col">
+                            <div class="contact-visual-composition" aria-hidden="true">
+                                <svg class="contact-abstract-svg" viewBox="0 0 380 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <pattern id="contactGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                                            <circle cx="10" cy="10" r="1" fill="#FFB98F" fill-opacity="0.35" />
+                                        </pattern>
+                                        <linearGradient id="contactGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#FFB98F" stop-opacity="0.3"/>
+                                            <stop offset="100%" stop-color="#FFDDB5" stop-opacity="0.1"/>
+                                        </linearGradient>
+                                        <linearGradient id="contactGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#CBE8F7" stop-opacity="0.5"/>
+                                            <stop offset="100%" stop-color="#FFFBEA" stop-opacity="0.2"/>
+                                        </linearGradient>
+                                    </defs>
+
+                                    <!-- Ambient floating graphic card -->
+                                    <rect x="25" y="30" width="330" height="360" rx="16" fill="#FFFBEA" stroke="#222222" stroke-opacity="0.08" stroke-width="1.5"/>
+                                    <rect x="25" y="30" width="330" height="360" rx="16" fill="url(#contactGrid)"/>
+
+                                    <!-- Header dots -->
+                                    <circle cx="50" cy="55" r="4.5" fill="#FFB98F"/>
+                                    <circle cx="65" cy="55" r="4.5" fill="#FFDDB5"/>
+                                    <circle cx="80" cy="55" r="4.5" fill="#CBE8F7"/>
+
+                                    <!-- Geometric Layer: Top Right Blue Circle -->
+                                    <circle cx="280" cy="120" r="48" fill="url(#contactGrad2)" stroke="#CBE8F7" stroke-width="1.5"/>
+
+                                    <!-- Central Editorial Frame -->
+                                    <g class="ambient-contact-card">
+                                        <rect x="55" y="95" width="220" height="150" rx="12" fill="#FFFFFF" stroke="#FFB98F" stroke-opacity="0.5" stroke-width="1.5"/>
+                                        <rect x="70" y="115" width="60" height="7" rx="3.5" fill="#FFB98F"/>
+                                        <line x1="70" y1="138" x2="245" y2="138" stroke="#222222" stroke-opacity="0.08" stroke-width="1.5" stroke-linecap="round"/>
+                                        <line x1="70" y1="154" x2="215" y2="154" stroke="#222222" stroke-opacity="0.08" stroke-width="1.5" stroke-linecap="round"/>
+                                        <line x1="70" y1="170" x2="235" y2="170" stroke="#222222" stroke-opacity="0.08" stroke-width="1.5" stroke-linecap="round"/>
+                                        
+                                        <!-- Connect nodes -->
+                                        <circle cx="85" cy="205" r="14" fill="url(#contactGrad1)" stroke="#FFB98F" stroke-width="1.2"/>
+                                        <circle cx="85" cy="205" r="4" fill="#FFB98F"/>
+                                        
+                                        <circle cx="155" cy="205" r="14" fill="url(#contactGrad2)" stroke="#CBE8F7" stroke-width="1.2"/>
+                                        <circle cx="155" cy="205" r="4" fill="#0284C7"/>
+
+                                        <circle cx="225" cy="205" r="14" fill="#FFFBEA" stroke="#FFDDB5" stroke-width="1.2"/>
+                                        <circle cx="225" cy="205" r="4" fill="#FFDDB5"/>
+
+                                        <path d="M 99 205 L 141 205" stroke="#222222" stroke-opacity="0.2" stroke-width="1.5" stroke-dasharray="3 3"/>
+                                        <path d="M 169 205 L 211 205" stroke="#FFB98F" stroke-width="1.5" stroke-dasharray="3 3"/>
+                                    </g>
+
+                                    <!-- Bottom Pastel Accent Block -->
+                                    <rect x="55" y="275" width="270" height="85" rx="10" fill="#FFFFFF" stroke="#222222" stroke-opacity="0.08" stroke-width="1"/>
+                                    <circle cx="80" cy="317" r="15" fill="#FFB98F" fill-opacity="0.2"/>
+                                    <path d="M 75 317 L 85 317 M 80 312 L 80 322" stroke="#FFB98F" stroke-width="2" stroke-linecap="round"/>
+                                    <text x="105" y="313" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#222222">Open for Collaboration</text>
+                                    <text x="105" y="328" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#222222" fill-opacity="0.6">AI · Full Stack · Open Source</text>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 07. RESUME PAGE SECTION -->
+        <section id="resume" class="resume-section" style="display: none;">
+            <div class="resume-container">
+                
+                <!-- Resume Header -->
+                <div class="resume-header">
+                    <div class="resume-title-wrap">
+                        <div class="resume-label-wrap">
+                            <span class="resume-label">Curriculum Vitae</span>
+                            <span class="resume-label-line" aria-hidden="true"></span>
+                        </div>
+                        <h1 class="resume-headline">Resume</h1>
+                        <p class="resume-subtext">Karishma Kale · B.Tech in Artificial Intelligence &amp; Data Science</p>
+                    </div>
+
+                    <!-- Action Controls -->
+                    <div class="resume-actions">
+                        <a href="resume.pdf" download="Karishma_Kale_Resume.pdf" class="btn-resume-download" aria-label="Download Resume PDF">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span>Download Resume</span>
+                        </a>
+
+                        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-resume-open" aria-label="Open Resume PDF in New Tab">
+                            <span>Open in New Tab</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Embedded PDF Preview Container -->
+                <div class="resume-preview-card">
+                    <div class="resume-preview-bar">
+                        <div class="preview-dots">
+                            <span class="preview-dot dot-red"></span>
+                            <span class="preview-dot dot-yellow"></span>
+                            <span class="preview-dot dot-green"></span>
+                        </div>
+                        <span class="preview-filename">Karishma_Kale_Resume.pdf</span>
+                        <a href="resume.pdf" download="Karishma_Kale_Resume.pdf" class="preview-quick-download" title="Quick Download">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="resume-embed-wrapper">
+                        <object data="resume.pdf" type="application/pdf" class="resume-pdf-object">
+                            <iframe src="resume.pdf" class="resume-pdf-iframe" title="Karishma Kale Resume PDF Preview">
+                                <div class="resume-pdf-fallback">
+                                    <p>Your browser does not support embedded PDF viewing.</p>
+                                    <a href="resume.pdf" download class="btn-resume-download">Download Resume PDF</a>
+                                </div>
+                            </iframe>
+                        </object>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- MINIMAL FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Karishma Kale. All rights reserved.</p>
+            <p class="footer-tagline">AI &amp; Data Science · Full Stack Engineering · Open Source</p>
+            <div class="footer-quick-links">
+                <a href="https://github.com/karizcloud" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <span class="footer-dot" aria-hidden="true">·</span>
+                <a href="https://www.linkedin.com/in/karishma-kale-345177383" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <span class="footer-dot" aria-hidden="true">·</span>
+                <a href="mailto:1006karishmakale@gmail.com?subject=Portfolio%20Inquiry" data-gmail-compose="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=1006karishmakale%40gmail.com&amp;su=Portfolio%20Inquiry">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP Core & ScrollTrigger (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0un3y64cnYpEqKJ7CBda8fKaegJ9lwd3op+6i7ot0o41ad5le3KGB8JMlB4GkFwdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
